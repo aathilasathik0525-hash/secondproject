@@ -1,1 +1,59 @@
-htl
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <div class="title">Scientific Calculator</div>
+
+    <input type="text" id="display" disabled>
+
+    <div class="buttons">
+
+        <!-- Scientific -->
+        <button onclick="append('Math.sin(')">sin</button>
+        <button onclick="append('Math.cos(')">cos</button>
+        <button onclick="append('Math.tan(')">tan</button>
+        <button onclick="clearDisplay()" class="clear">C</button>
+
+        <button onclick="append('Math.log10(')">log</button>
+        <button onclick="append('Math.sqrt(')">√</button>
+        <button onclick="append('Math.pow(')">xʸ</button>
+        <button onclick="deleteLast()">⌫</button>
+
+        <button onclick="append('Math.PI')">π</button>
+        <button onclick="append('Math.E')">e</button>
+        <button onclick="append('(')">(</button>
+        <button onclick="append(')')">)</button>
+
+        <!-- Numbers -->
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('/')">÷</button>
+
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('*')">×</button>
+
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('-')">−</button>
+
+        <button onclick="append('0')" class="zero">0</button>
+        <button onclick="append('.')">.</button>
+        <button onclick="calculate()" class="equal">=</button>
+        <button onclick="append('+')">+</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
